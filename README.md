@@ -8,6 +8,8 @@ A clean, customizable, and responsive Linktree-style landing page built using HT
 
 ![Demo of LucentLink](static/images/demo.gif)
 
+![LucentLink Screenshot](screenshot.png)
+
 ## Features
 
 - **Profile Section**: Display a profile image, name, description, and social icons.
