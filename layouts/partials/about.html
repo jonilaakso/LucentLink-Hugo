@@ -1,16 +1,13 @@
-<div class="bg-white bg-opacity-20 rounded-lg p-6 mb-6 border border-white border-opacity-20">
-    <h2 class="text-xl font-bold mb-4">About Me</h2>
-    <div class="space-y-4">
-        <div>
-            <h3 class="font-semibold mb-2">Professional Background</h3>                    <p class="text-sm opacity-80">I'm a full-stack developer with 5+ years of experience building web applications. Specialized in JavaScript frameworks and cloud architecture.</p>
-        </div>
-        <div>
-        <h3 class="font-semibold mb-2">Current Focus</h3>
-            <p class="text-sm opacity-80">Currently working on open-source tools to improve developer productivity and accessibility in web development.</p>
-        </div>
-        <div>
-            <h3 class="font-semibold mb-2">Personal Interests</h3>
-            <p class="text-sm opacity-80">When not coding, I enjoy photography, hiking, and contributing to local tech communities through mentorship programs.</p>
-        </div>
-    </div>
+{{ with .Params.about }}
+<div class="bg-white bg-opacity-10 rounded-lg p-6 mb-6 border border-white border-opacity-20">
+  <h2 class="text-xl font-bold mb-4">{{ .title }}</h2>
+  <div class="space-y-4">
+    {{ range .sections }}
+      <div>
+        <h3 class="font-semibold mb-2">{{ .heading }}</h3>
+        <p class="text-sm opacity-80">{{ .content }}</p>
+      </div>
+    {{ end }}
+  </div>
 </div>
+{{ end }}
