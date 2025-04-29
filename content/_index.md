@@ -1,7 +1,7 @@
 ---
 title: "LucentLink"
 # Profile settings
-profileImage: "/image/img.jpg"        # path under static/
+profileImage: "/images/img.jpg"        # path under static/
 name: "cx48"
 description: "Security Analyst | Frontend Developer | Content Writer"
 socials:
