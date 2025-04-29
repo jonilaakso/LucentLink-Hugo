@@ -74,6 +74,10 @@ messaging:
       color: "text-red-400"
       text: "Please don't send unsolicited sales pitches or recruitment messages."
 
+
+#  REMOVE "How to Customize This Page" section by removing the line "{{ partial "Instructions.html" . }}" in index.html file under layouts/
+
+
 # About section (optional section)
 
 # about:
